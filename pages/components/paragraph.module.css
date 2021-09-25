@@ -1,0 +1,21 @@
+.frame {
+  --paragraph-offset: calc((6px + 1px) * -1);
+
+  padding-bottom: 1px;
+  padding-top: 1px;
+}
+
+.frame::before,
+.frame::after {
+  content: '';
+  display: block;
+  height: 0;
+}
+
+.frame::before {
+  margin-top: var(--paragraph-offset);
+}
+
+.frame::after {
+  margin-bottom: var(--paragraph-offset);
+}

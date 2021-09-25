@@ -1,0 +1,5 @@
+.frame {
+  fill: var(--icon-fill, currentColor);
+  height: 24px;
+  width: 24px;
+}

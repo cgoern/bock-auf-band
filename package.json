@@ -13,7 +13,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier . --write"
+    "stylelint": "stylelint \"**/*.css\" --fix",
+    "prettier": "prettier . --write",
+    "format": "npm run prettier && npm run stylelint"
   },
   "dependencies": {
     "next": "11.1.2",
@@ -21,12 +23,35 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.2.0"
   },
   "prettier": {
     "printWidth": 80,
     "semi": false,
     "singleQuote": true,
     "htmlWhitespaceSensitivity": "strict"
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-prettier"
+    ],
+    "plugins": [
+      "stylelint-prettier",
+      "stylelint-order"
+    ],
+    "rules": {
+      "prettier/prettier": true,
+      "order/order": [
+        "custom-properties",
+        "declarations",
+        "rules",
+        "at-rules"
+      ],
+      "order/properties-alphabetical-order": true
+    }
   }
 }

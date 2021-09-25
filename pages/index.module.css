@@ -1,0 +1,33 @@
+.frame {
+  align-content: center;
+  display: grid;
+  grid-template: auto / minmax(auto, 480px);
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.box {
+  border: 4px solid var(--outline);
+  box-shadow: 16px 16px 0 0 var(--surface-negative);
+  display: grid;
+  gap: 24px;
+  grid-template: repeat(3, auto) / 1fr;
+  padding: 32px;
+}
+
+.body {
+  display: grid;
+  gap: 24px;
+}
+
+.links {
+  display: grid;
+  gap: 24px;
+  grid-template: auto / repeat(2, 1fr);
+}
+
+.foot {
+  display: grid;
+  gap: 24px;
+  grid-template: repeat(2, auto) / 1fr;
+}

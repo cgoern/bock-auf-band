@@ -1,0 +1,46 @@
+.frame {
+  align-items: center;
+  background: var(--button-background);
+  box-shadow: var(--button-outline, 0 0 0 transparent),
+    var(--button-shadow, 8px 8px 0 0 var(--shadow));
+  color: var(--button-color);
+  display: grid;
+  font-weight: 700;
+  gap: 8px;
+  grid-template: var(--button-template, auto);
+  height: 48px;
+  justify-content: center;
+  justify-items: center;
+  text-decoration: none;
+}
+
+.frame:active {
+  --button-shadow: 0 0 0 transparent;
+
+  transform: translate(8px, 8px);
+}
+
+.primary {
+  --button-background: var(--surface-negative);
+  --button-color: var(--foreground-negative);
+  --button-outline: 4px 4px 0 0 var(--surface-positive);
+}
+
+.secondary {
+  --button-color: var(--foreground-positive);
+  --button-outline: inset 0 0 0 4px var(--outline);
+}
+
+.youtube {
+  --button-background: var(--youtube);
+  --button-color: rgb(255, 255, 255);
+}
+
+.spotify {
+  --button-background: var(--spotify);
+  --button-color: rgb(0, 0, 0);
+}
+
+.has-icon {
+  --button-template: auto / repeat(2, auto);
+}
