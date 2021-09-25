@@ -14,7 +14,7 @@ export default function Index() {
       <div className={styles.box}>
         <div className={styles.body}>
           <Paragraph>
-            <strong>Rhythmus-Duo (Schlagzeug/Bass)</strong> mit reichlich
+            <strong>Rhythmus-Duo (Schlagzeug + Bass)</strong> mit reichlich
             Studio- und Live-Erfahrung sucht Gitarristen/Sänger (am liebsten in
             einer Person) für ein neues Projekt in Berlin. Genre wäre von Rock
             bis Punk alles denkbar. Alter oder ähnliches ist erstmal egal, wir
