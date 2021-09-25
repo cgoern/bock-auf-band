@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Paragraph from './components/paragraph'
 import Button from './components/button'
 import Glyphs from './components/glyphs'
@@ -49,12 +50,13 @@ export default function Index() {
             href="mailto:bock-auf-band@fastmail.net"
             theme="primary"
           />
-          <Button
-            title="Kein Bock auf Band"
-            label="Kein Bock"
-            href="#"
-            theme="secondary"
-          />
+          <Link href="/booh" passHref>
+            <Button
+              title="Kein Bock auf Band"
+              label="Kein Bock"
+              theme="secondary"
+            />
+          </Link>
         </div>
       </div>
       <Glyphs />
