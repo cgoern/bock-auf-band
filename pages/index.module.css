@@ -1,4 +1,6 @@
 .frame {
+  --box-padding: 24px;
+
   align-content: center;
   display: grid;
   grid-template: auto / minmax(auto, 480px);
@@ -7,16 +9,7 @@
   min-height: -webkit-fill-available;
 }
 
-.box {
-  box-shadow: var(--index-box-outline, 0 0 0 transparent),
-    var(--index-box-shadow);
-  display: grid;
-  gap: 24px;
-  grid-template: repeat(3, auto) / 1fr;
-  padding: var(--index-box-padding, 16px);
-}
-
-.body {
+.text {
   display: grid;
   gap: 24px;
 }
@@ -31,12 +24,4 @@
   display: grid;
   gap: 24px;
   grid-template: repeat(2, auto) / 1fr;
-}
-
-@media (min-width: 480px) and (min-height: 528px) {
-  .frame {
-    --index-box-outline: inset 0 0 0 4px var(--outline);
-    --index-box-shadow: 16px 16px 0 0 var(--surface-negative);
-    --index-box-padding: 32px;
-  }
 }

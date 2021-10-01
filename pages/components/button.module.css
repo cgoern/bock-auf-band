@@ -8,7 +8,7 @@
   font-weight: 700;
   gap: 8px;
   grid-template: var(--button-template, auto);
-  height: 48px;
+  height: 44px;
   justify-content: center;
   justify-items: center;
   padding: 0 16px;

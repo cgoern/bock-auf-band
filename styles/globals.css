@@ -45,7 +45,8 @@ body {
   background: var(--surface-positive);
   color: var(--foreground-positive);
   font-family: monospace;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 24px;
   margin: 0;
+  padding: 0 16px;
 }

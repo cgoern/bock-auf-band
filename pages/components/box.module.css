@@ -1,0 +1,8 @@
+.frame {
+  box-shadow: inset 0 0 0 4px var(--outline),
+    12px 12px 0 0 var(--surface-negative);
+  display: grid;
+  gap: 24px;
+  margin: 16px 0;
+  padding: var(--box-padding, 4px);
+}

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Box from './components/box'
 import styles from './booh.module.css'
 import boohImage from '../public/booh.gif'
 
@@ -10,9 +11,9 @@ export default function Index() {
         <title>Bock auf Band?</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.box}>
+      <Box>
         <Image layout="responsive" src={boohImage} alt="Booh..." />
-      </div>
+      </Box>
     </div>
   )
 }

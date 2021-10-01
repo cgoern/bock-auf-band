@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Paragraph from './components/paragraph'
 import Button from './components/button'
 import Glyphs from './components/glyphs'
+import Box from './components/box'
 import styles from './index.module.css'
 
 export default function Index() {
@@ -12,14 +13,13 @@ export default function Index() {
         <title>Bock auf Band?</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.box}>
-        <div className={styles.body}>
+      <Box>
+        <div className={styles.text}>
           <Paragraph>
-            <strong>Rhythmus-Duo (Schlagzeug + Bass)</strong> mit reichlich
-            Studio- und Live-Erfahrung sucht Gitarristen/Sänger (am liebsten in
-            einer Person) für ein neues Projekt in Berlin. Genre wäre von Rock
-            bis Punk alles denkbar. Alter oder ähnliches ist erstmal egal, wir
-            sind für alles offen.
+            <strong>Berliner Rhythmus-Duo (Schlagzeug + Bass)</strong> mit
+            reichlich Studio- und Live-Erfahrung sucht Gitarristen/Sänger (am
+            liebsten in einer Person). Genre wäre von Rock bis Punk alles
+            denkbar.
           </Paragraph>
           <Paragraph>
             Hörbeispiele von unserer letzten Band findet ihr hier:
@@ -58,7 +58,7 @@ export default function Index() {
             />
           </Link>
         </div>
-      </div>
+      </Box>
       <Glyphs />
     </div>
   )
