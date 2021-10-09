@@ -7,8 +7,6 @@ import Box from './components/box'
 import styles from './index.module.css'
 import coverImage from '../public/cover.png'
 
-console.log(coverImage)
-
 export default function Index() {
   return (
     <div className={styles.frame}>
