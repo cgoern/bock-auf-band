@@ -5,12 +5,16 @@ import Button from './components/button'
 import Glyphs from './components/glyphs'
 import Box from './components/box'
 import styles from './index.module.css'
+import coverImage from '../public/cover.png'
+
+console.log(coverImage)
 
 export default function Index() {
   return (
     <div className={styles.frame}>
       <Head>
         <title>Bock auf Band?</title>
+        <meta property="og:image" content={coverImage.src} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box>
