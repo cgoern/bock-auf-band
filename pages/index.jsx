@@ -16,7 +16,6 @@ export default function Index() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bock-auf-band.vercel.app" />
         <meta property="og:image" content={coverImage.src} />
-        <meta name="twitter:card" content={coverImage.src} />
         <meta name="twitter:image" content={coverImage.src} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
