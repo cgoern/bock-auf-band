@@ -12,7 +12,12 @@ export default function Index() {
     <div className={styles.frame}>
       <Head>
         <title>Bock auf Band?</title>
+        <meta property="og:title" content="Bock auf Band?" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bock-auf-band.vercel.app" />
         <meta property="og:image" content={coverImage.src} />
+        <meta name="twitter:card" content={coverImage.src} />
+        <meta name="twitter:image" content={coverImage.src} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box>
