@@ -1,37 +1,33 @@
 :root {
+  --brand-spotify: rgb(35 215 95);
+  --brand-youtube: rgb(252 13 2);
   --foreground-negative: rgb(255 255 255);
   --foreground-positive: rgb(0 0 0);
-  --outline: rgb(0 0 0);
-  --shadow: rgb(0 0 0);
-  --spotify: rgb(35 215 95);
   --surface-negative: rgb(0 0 0);
   --surface-positive: rgb(255 255 255);
-  --youtube: rgb(252 13 2);
 }
 
 @supports (color: color(display-p3 1 1 1)) {
   :root {
-    --spotify: color(display-p3 0.1373 0.8431 0.3725);
-    --youtube: color(display-p3 0.9882 0.051 0.0078);
+    --brand-spotify: color(display-p3 0.1373 0.8431 0.3725);
+    --brand-youtube: color(display-p3 0.9882 0.051 0.0078);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --brand-spotify: rgb(56 227 105);
+    --brand-youtube: rgb(255 64 33);
     --foreground-negative: rgb(0 0 0);
     --foreground-positive: rgb(255 255 255);
-    --outline: rgb(255 255 255);
-    --shadow: rgba(255 255 255 / 30%);
-    --spotify: rgb(56 227 105);
     --surface-negative: rgb(255 255 255);
     --surface-positive: rgb(0 0 0);
-    --youtube: rgb(255 64 33);
   }
 
   @supports (color: color(display-p3 1 1 1)) {
     :root {
-      --spotify: color(display-p3 0.2196 0.8902 0.4118);
-      --youtube: color(display-p3 1 0.251 0.1294);
+      --brand-spotify: color(display-p3 0.2196 0.8902 0.4118);
+      --brand-youtube: color(display-p3 1 0.251 0.1294);
     }
   }
 }

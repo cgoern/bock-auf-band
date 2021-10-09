@@ -49,12 +49,14 @@ export default function Index() {
             label="Bock"
             href="mailto:bock-auf-band@fastmail.net"
             theme="primary"
+            icon="thumb-up"
           />
           <Link href="/booh" passHref>
             <Button
               title="Kein Bock auf Band"
               label="Kein Bock"
               theme="secondary"
+              icon="thumb-down"
             />
           </Link>
         </div>

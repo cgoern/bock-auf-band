@@ -2,7 +2,7 @@
   align-items: center;
   background: var(--button-background);
   box-shadow: var(--button-outline, 0 0 0 transparent),
-    var(--button-shadow, 8px 8px 0 0 var(--shadow));
+    var(--button-shadow, 8px 8px 0 0 var(--surface-negative));
   color: var(--button-color);
   display: grid;
   font-weight: 700;
@@ -29,17 +29,17 @@
 
 .secondary {
   --button-color: var(--foreground-positive);
-  --button-outline: inset 0 0 0 4px var(--outline);
+  --button-outline: inset 0 0 0 4px var(--foreground-positive);
 }
 
 .youtube {
-  --button-background: var(--youtube);
-  --button-color: rgb(255, 255, 255);
+  --button-background: var(--brand-youtube);
+  --button-color: rgb(255 255 255);
 }
 
 .spotify {
-  --button-background: var(--spotify);
-  --button-color: rgb(0, 0, 0);
+  --button-background: var(--brand-spotify);
+  --button-color: rgb(0 0 0);
 }
 
 .has-icon {
