@@ -53,7 +53,7 @@ export default function Index() {
           <Button
             title="E-Mail an Bock auf Band"
             label="Bock"
-            href="mailto:bock-auf-band@fastmail.net"
+            href="mailto:bock_auf_band@fastmail.net"
             theme="primary"
             icon="thumb-up"
           />
