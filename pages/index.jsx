@@ -1,24 +1,13 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import Paragraph from './components/paragraph'
 import Button from './components/button'
 import Glyphs from './components/glyphs'
 import Box from './components/box'
 import styles from './index.module.css'
-import coverImage from '../public/cover.png'
 
 export default function Index() {
   return (
     <div className={styles.frame}>
-      <Head>
-        <title>Bock auf Band?</title>
-        <meta property="og:title" content="Bock auf Band?" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://bock-auf-band.vercel.app" />
-        <meta property="og:image" content={coverImage.src} />
-        <meta name="twitter:image" content={coverImage.src} />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Box>
         <div className={styles.text}>
           <Paragraph>
