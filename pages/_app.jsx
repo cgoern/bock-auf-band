@@ -16,13 +16,13 @@ function BockAufBandApp({ Component, pageProps }) {
         <meta property="og:url" content="https://bock-auf-band.vercel.app" />
         <meta
           property="og:image"
-          content={`https://bock-auf-band.vercel.app/${coverImage.src}`}
+          content={`https://bock-auf-band.vercel.app${coverImage.src}`}
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta
           name="twitter:image"
-          content={`https://bock-auf-band.vercel.app/${coverImage.src}`}
+          content={`https://bock-auf-band.vercel.app${coverImage.src}`}
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
